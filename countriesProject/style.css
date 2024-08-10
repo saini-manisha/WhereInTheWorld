@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+
+}
+body{
+    --background-color:white;
+    --text-color:black;
+    --elements-color:white;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    /* background-color: var(--background-color); */
+    /* color: var(--text-color); */
+
+}
+.header-container{
+
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    padding-inline:24px;
+    /* background-color: var(--elements-color); */
+    /* background: none; */
+
+
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+  
+}
+
+.title{
+    font-weight: 800;
+}
+
+.search-filter-container{
+    margin-block: 16px 50px;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.search-container{
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    max-width: 350px;
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 24px;
+    overflow: hidden;
+
+
+
+}
+
+.search-container input{
+    outline: none;
+    border: none;
+    padding: 16px;
+    color: #999;
+    width: 90%;
+}
+
+.search-container input::placeholder{
+    color: #999;
+}
+
+.filter-by-region{
+    width: 200px;
+    padding:  12px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+
+main{
+    padding: 34px;
+}
+
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+.countries-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.country-card{
+    display: inline-block;
+   
+    width: 270px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 24px;
+    transition: transform 1.02s ease-in-out;
+   
+    background-color: transparent; 
+}
+
+.country-card:hover{
+   transform: scale(1.05);
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+   
+}
+.country-card img{
+    width: 100%;
+    /* aspect-ratio: 3/2; */
+    /* object-fit: contain; */
+    mix-blend-mode: color-burn;
+   
+  
+   
+    
+}
+
+.card-title{
+    font-size: 24px;
+    margin-block: 16px;
+}
+
+.card-text{
+    padding-inline:15px;
+
+}
+
+.card-text p{
+    margin-block: 8px;
+}
+
+
+@media (max-width:680px){
+    .countries-container{
+        justify-content: center;
+    }
+    .title{
+        font-size: 12px;
+    }
+
+    .search-filter-container{
+        flex-direction: column;
+    }
+
+
+}
